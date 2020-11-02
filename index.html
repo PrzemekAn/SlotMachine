@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gameContainer">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <input id="bid" type="number" placeholder="Podaj stawkę">
+        <button class="draw">Zakręć</button>
+        <div class="wallet">
+            <p>Zawartość portfela: <span class = 'wallet-value'>200</span>$</p>
+        </div>
+        <div class="result-info">
+            <span class="money-change"></span> Zagrałeś <span class="games"></span>razy. Wygrałeś <span class="wins"></span> gier i przegrałeś <span class="losses"></span>gier.
+        </div>
+
+    </div>
+    <script src = "Wallet.js"></script>
+    <script src = "Draw.js"></script>
+    <script src = "Result.js"></script>
+    <script src = "Game.js"></script>
+    <script src = "main.js"></script>
+</body>
+</html>

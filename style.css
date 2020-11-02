@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 100vh;
+    /* background-color: lightslategray; */
+    margin: auto;
+    padding-top: 100px;
+}
+
+.gameContainer {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+    margin: auto 10px;
+    border: 2px solid black;
+}
+
+#bid {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+}
+
+.draw {
+    display: block;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.draw:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.wallet {
+    width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.result-info {
+    width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+span {
+    font-weight: 900;
+}
