@@ -1,6 +1,7 @@
 class Wallet{
     constructor(money){
         let _money = money;
+        let _winMoney;
 
         this.getWalletValue = () => {
             return _money;
@@ -20,7 +21,17 @@ class Wallet{
             else if (win === false){
                 _money -= value;
             }
-
+        }
+        
+        this.wonMoney = (value,win) => {
+            if(win === true){
+                _winMoney = `Wygrałeś ${value*3}$.`
+                
+            }
+            else if(win === false){
+                _winMoney = `Przegrałeś ${value}$.`;
+            }
+            return _winMoney;
         }
     }   
 }

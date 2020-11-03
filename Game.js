@@ -12,6 +12,7 @@ class Game{
         this.gamesSpan = document.querySelector('.games');
         this.winsSpan = document.querySelector('.wins');
         this.lossesSpan = document.querySelector('.losses');
+        this.moneyChangeSpan = document.querySelector('.money-change');
 
 
     this.spinButton.addEventListener('click',this.render.bind(this))
@@ -33,6 +34,8 @@ class Game{
             this.wallet.changeWallet(this.inputBid.value, this.result.isWin(currentDraw));
 
             //wypełnienie tablicy wyników
+            this.moneyChangeSpan.textContent = this.wallet.wonMoney(this.inputBid.value, this.result.isWin(currentDraw));
+
             this.statistics.getResults(this.result.isWin(currentDraw));
             let currentStats = this.statistics.showResults();
 
